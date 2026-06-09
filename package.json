@@ -1,16 +1,24 @@
 {
-  "name": "studybuddy",
+  "name": "studybuddy-server",
   "version": "1.0.0",
-  "description": "AI-Powered Study Buddy - MERN Stack Application",
+  "description": "AI-Powered Study Buddy Backend",
+  "main": "server.js",
   "scripts": {
-    "server": "cd server && node server.js",
-    "client": "cd client && npm run dev",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "install-all": "cd server && npm install && cd ../client && npm install"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": ["study", "ai", "mern", "education"],
-  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "groq-sdk": "^1.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "nodemon": "^3.1.9"
   }
 }
