@@ -1,0 +1,16 @@
+{
+  "name": "studybuddy",
+  "version": "1.0.0",
+  "description": "AI-Powered Study Buddy - MERN Stack Application",
+  "scripts": {
+    "server": "cd server && node server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["study", "ai", "mern", "education"],
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
